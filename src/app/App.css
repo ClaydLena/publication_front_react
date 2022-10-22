@@ -2,47 +2,69 @@
   font-family: 'Menlo, Consolas, monospace';
 }
 
+/*DRY*/
+.app{
+  text-align: center;
+}
+
+.app-topbar{
+  display: grid;
+  text-align: center;
+  color: aliceblue;
+  align-items: center;
+  background-color: #455a64;
+  grid-template-columns: auto auto;
+}
+
+/*Publication card*/
+.pub-publicacao{
+  width:80%;
+  height: 30%;
+  background-color: aliceblue;
+  color:grey;
+  text-align: justify;
+}
+
+.pub-username{
+  margin:0 5%;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px grey solid;
+}
+
+.pub-tooltip{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
 /*DESKTOP*/
 @media screen
 and (min-width:1024px) {
   .App {
-    text-align: center;
     width: 50%;
     margin-left: 25%;
   }
   
   .app-topbar{
-    display: grid;
     padding: 0 10%;
     column-gap: 80%;
-    color: aliceblue;
-    align-items: center;
     grid-template-columns: auto auto;
-    background-color: #455a64;
   }  
 
   /*Publication card*/
   .pub-publicacao{
-    width:80%;
-    height: 30%;
-    background-color: aliceblue;
-    color:grey;
-    text-align: justify;
     padding: 1%;
     border-radius: 5%;
     margin-left: 10%;
 }
 
 .pub-username{
-    margin:0 5%;
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: 1px grey solid;
+    
 }
 
 .pub-tooltip{
-    display: grid;
-    grid-template-columns: auto auto;
+    
 }
   /*Writing css*/
   .writing-publicacao{
@@ -77,49 +99,32 @@ and (min-width:1024px) {
 /*MOBILE*/
 @media screen and (max-width:767px){
   .App {
-    text-align: center;
     width: 100%;
   }
-  
+
   .app-topbar{
-    display: grid;
     padding: 0 10%;
     column-gap: 60%;
-    color: aliceblue;
-    align-items: center;
-    grid-template-columns: auto auto;
-    background-color: #455a64;
   }   
 
   /*Publication card*/
   .pub-publicacao{
-    width:80%;
-    height: 30%;
-    background-color: aliceblue;
-    text-align: justify;
     padding: 2% 5%;
     border-radius: 5%;
     margin-left: 5%;
 }
 
 .pub-username{
-    margin:0 5%;
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: 1px solid grey;
+   
 
 }
 
 .pub-tooltip{
-    display: grid;
-    grid-template-columns: auto auto;
     column-gap: 50%;
 }
 
 /*Writing css*/
 .bar{
-
-
   background-color: rgba(228, 228, 227, 0.182);
   display: grid;
   grid-template-columns: 10% 20%;
@@ -133,10 +138,5 @@ and (min-width:1024px) {
   grid-template-columns: 10% 25%;
   padding: 0 5%;
   align-items: center;
-}
-.textfield :focus{
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0; 
 }
 }
