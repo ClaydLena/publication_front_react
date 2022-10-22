@@ -3,15 +3,15 @@ import { IconButton } from "@mui/material";
 import {Tooltip} from "@mui/material";
 import { Favorite } from "@mui/icons-material";
 
-function Publication() {
+function Publication({autor, title, content, likes}) {
   return (
-    <div className="pub-publication">
+    <div className="pub-publicacao">
         <div className="pub-username">
-            John
+            {autor} - {title}
         </div>
         <div className="pub-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero risus, ultricies et pretium vel, vehicula id erat. Quisque consequat faucibus mollis. Cras sed elit a urna finibus rutrum maximus mollis nibh. Maecenas hendrerit leo eget magna mattis mattis. In non dolor nisi. Duis eget feugiat nulla, 
-            a tincidunt nisl. Nullam venenatis a ipsum sit amet maximus
+            <h4>{title}</h4>
+            <p>{content}</p>
         </div>
         <div className="pub-tooltip">
             <Tooltip title="Like">

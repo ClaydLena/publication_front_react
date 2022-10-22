@@ -12,7 +12,7 @@ function Writing (){
             <div className="writing-bar">
                 <Link to='/'>
                     <IconButton>
-                        <Clear/> 
+                        <Clear style={{color: 'aliceblue'}}/> 
                     </IconButton>
                 </Link>
                 <Button variant="text">Publicar</Button>
@@ -21,15 +21,15 @@ function Writing (){
                 <LetterAvatars/>
                 <h4>Username</h4>
             </div>
-            <div>
+            <div className="writing-cont">
                 <TextField
                     label="No que estas a pensar?"
                     multiline
                     placeholder="Publique suas ideias"
                     variant="standard"
-                    style={{ width: 400, boxShadow:'none', border:'none' }}
+                    // style={{ width: 400, boxShadow:'none', border:'none' }}
                     minRows={3}
-                    maxRows={25}
+                    maxRows={20}
                     className='writing-textfield'
                 />
             </div>

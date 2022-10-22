@@ -7,6 +7,9 @@
   text-align: center;
 }
 
+body{
+  background-color:#c6c5c100;
+}
 .app-topbar{
   display: grid;
   text-align: center;
@@ -18,6 +21,7 @@
 
 /*Publication card*/
 .pub-publicacao{
+  margin-bottom: 1%;
   width:80%;
   height: 30%;
   background-color: aliceblue;
@@ -34,6 +38,7 @@
 
 .pub-tooltip{
   display: grid;
+  column-gap: 50%;
   grid-template-columns: auto auto;
 }
 
@@ -67,28 +72,35 @@ and (min-width:1024px) {
     
 }
   /*Writing css*/
-  .writing-publicacao{
-    width:80%;
-    height: 30%;
-    background-color: aliceblue;
-    color:grey;
-    text-align: justify;
-    padding: 1%;
-    border-radius: 5%;
-    margin-left: 10%;
+ .writing-container{
+
+ }
+
+ .writing-bar{
+
+  background-color: #455a64;
+  display: grid;
+  grid-template-columns: 10% 20%;
+   column-gap: 60%;
+  padding: 0 5%;
+  align-items: center;
+  padding:2% 5%;
 }
 
-.writing-username{
-    margin:0 5%;
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: 1px grey solid;
+.writing-user{
+  display: grid;
+  grid-template-columns: 10% 25%;
+  padding: 0 5%;
+  align-items: center;
 }
 
-.writing-tooltip{
-    display: grid;
-    grid-template-columns: auto auto;
-}  
+.writing-cont{
+  padding: 0 5%;
+}
+
+.writing-textfield{
+  width: 100%;
+}
 }
 
 /*TABLET*/
@@ -124,19 +136,30 @@ and (min-width:1024px) {
 }
 
 /*Writing css*/
-.bar{
-  background-color: rgba(228, 228, 227, 0.182);
+.writing-bar{
+  background-color: #455a64;
   display: grid;
   grid-template-columns: 10% 20%;
    column-gap: 60%;
-  padding: 0 5%;
+  padding: 3% 5%;
   align-items: center;
 }
 
-.user{
+.writing-user{
   display: grid;
   grid-template-columns: 10% 25%;
   padding: 0 5%;
+  column-gap: 5%;
   align-items: center;
 }
+
+ 
+.writing-cont{
+  padding: 0 5%;
+}
+
+.writing-textfield{
+  width: 100%;
+}
+
 }

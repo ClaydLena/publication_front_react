@@ -4,8 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Publication from './PublicationCard';
-import Writing from './Writing';
+import List from './List';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,11 +55,10 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        
-        <Publication/>
+          <List/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-       
+        <List/>
       </TabPanel>
     </Box>
   );
