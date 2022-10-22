@@ -1,0 +1,58 @@
+/*DESKTOP*/
+@media screen
+and (min-width:1024px) {
+    .publicacao{
+        width:80%;
+        height: 30%;
+        background-color: aliceblue;
+        color:grey;
+        text-align: justify;
+        padding: 1%;
+        border-radius: 5%;
+        margin-left: 10%;
+    }
+    
+    .username{
+        margin:0 5%;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom: 1px grey solid;
+    }
+    
+    .tooltip{
+        display: grid;
+        grid-template-columns: auto auto;
+    }  
+}
+
+/*TABLET*/
+@media screen and (min-width:767px) and (max-width:1032px){
+    
+}
+
+/*MOBILE*/
+@media screen and (max-width:767px){
+    .bar{
+
+
+        background-color: rgba(228, 228, 227, 0.182);
+        display: grid;
+        grid-template-columns: 10% 20%;
+         column-gap: 60%;
+        padding: 0 5%;
+        align-items: center;
+    }
+    
+    .user{
+        display: grid;
+        grid-template-columns: 10% 25%;
+        padding: 0 5%;
+        align-items: center;
+    }
+    .textfield :focus{
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0; 
+    }
+}
+
