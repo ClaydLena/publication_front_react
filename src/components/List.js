@@ -3,7 +3,7 @@ import BasicTabs from "./Tabs";
 
 function List (){
     return(
-        <BasicTabs/>
+        <></>
     )
 }
 

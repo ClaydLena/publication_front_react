@@ -1,20 +1,19 @@
 import React from "react";
-import './Publicacao.css'
 import { IconButton } from "@mui/material";
 import {Tooltip} from "@mui/material";
 import { Favorite } from "@mui/icons-material";
 
-function Publicacao() {
+function Publication() {
   return (
-    <div className="publicacao">
-        <div className="username">
+    <div className="pub-publication">
+        <div className="pub-username">
             John
         </div>
-        <div className="content">
+        <div className="pub-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero risus, ultricies et pretium vel, vehicula id erat. Quisque consequat faucibus mollis. Cras sed elit a urna finibus rutrum maximus mollis nibh. Maecenas hendrerit leo eget magna mattis mattis. In non dolor nisi. Duis eget feugiat nulla, 
             a tincidunt nisl. Nullam venenatis a ipsum sit amet maximus
         </div>
-        <div className="tooltip">
+        <div className="pub-tooltip">
             <Tooltip title="Delete">
                 <IconButton>
                     <Favorite/>
@@ -26,4 +25,4 @@ function Publicacao() {
   );
 }
 
-export default Publicacao;
+export default Publication;

@@ -3,20 +3,19 @@ import { IconButton } from "@mui/material";
 import React from "react";
 import LetterAvatars from "./Avatar";
 import Button from '@mui/material/Button';
-import './Publication.css';
 import TextField from '@mui/material/TextField';
 
 
-function Publication (){
+function Writing (){
     return(
-        <div className="container">
-            <div className="bar">
+        <div className="writing-container">
+            <div className="writing-bar">
                 <IconButton>
                     <Clear/> 
                 </IconButton>
                 <Button variant="text">Publicar</Button>
             </div>
-            <div className="user">
+            <div className="writing-user">
                 <LetterAvatars/>
                 <h4>Username</h4>
             </div>
@@ -29,11 +28,11 @@ function Publication (){
                     style={{ width: 400, boxShadow:'none', border:'none' }}
                     minRows={3}
                     maxRows={25}
-                    className='textfield'
+                    className='writing-textfield'
                 />
             </div>
         </div>
     )
 }
 
-export default Publication
+export default Writing
