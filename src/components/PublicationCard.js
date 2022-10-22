@@ -14,7 +14,7 @@ function Publication() {
             a tincidunt nisl. Nullam venenatis a ipsum sit amet maximus
         </div>
         <div className="pub-tooltip">
-            <Tooltip title="Delete">
+            <Tooltip title="Like">
                 <IconButton>
                     <Favorite/>
                 </IconButton>
